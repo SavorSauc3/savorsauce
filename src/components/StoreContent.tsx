@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Typography, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Button } from '@mui/material';
-import Navbar from '../components/Navbar';
 import Link from 'next/link';
 import { useThemeContext } from '../context/ThemeContext';
 import EditStoreItem from './StoreItemEditor';
