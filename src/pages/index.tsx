@@ -112,18 +112,6 @@ const Home: React.FC = () => {
                     </CardContent>
                   </Card>
                 </Grid>
-                <Grid item xs={12} sm={4}>
-                  <Card style={{ backgroundColor: theme.palette.background.paper, backdropFilter: 'blur(8px)' }}>
-                    <CardContent>
-                      <Typography variant="h5" style={styles.typography}>
-                        Newest Project
-                      </Typography>
-                      <Typography style={styles.typography}>
-                        No projects available at the moment!
-                      </Typography>
-                    </CardContent>
-                  </Card>
-                </Grid>
               </Grid>
             </Container>
         </ShaderBackground>
@@ -134,7 +122,7 @@ const styles = {
     typography: {
         // Add any additional styles for your typography here
         color: 'inherit',
-        textAlign: 'center',
+        textAlign: 'center' as any,
         padding: '1rem', // Use inherit to respect the theme
     },
 };
