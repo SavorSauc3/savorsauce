@@ -19,7 +19,7 @@ interface BlogEditorProps {
 
 const BlogEditor: React.FC<BlogEditorProps> = ({ onSubmit, onCancel, data }) => {
     const [title, setTitle] = useState(data?.title || '');
-    const [id, setId] = useState(data?.id || 0);
+    const [id] = useState(data?.id || 0);
     const [content, setContent] = useState(data?.content || '');
     const [thumbnail, setThumbnail] = useState(data?.thumbnail || '');
     const router = useRouter();

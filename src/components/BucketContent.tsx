@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
-import { Container, Paper, Typography, Box } from '@mui/material';
+import { Paper, Typography, Box } from '@mui/material';
 import BucketTable from './BucketTable'; // Ensure BucketTable is imported correctly
 import PageTitle from './PageTitle'; // Ensure PageTitle is imported correctly
 
@@ -77,7 +77,7 @@ const BucketContent: React.FC = () => {
                 const data = await response.json();
                 setBucketItems(data.results);
             } catch (error) {
-                setError('Failed to load bucket content');
+                setError('Failed to load bucket content: ' + error);
             } finally {
                 setLoading(false);
             }

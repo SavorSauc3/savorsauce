@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Table, TableBody, TableCell, TableHead, TableRow, Button, Container, Typography } from '@mui/material';
+import { Table, TableBody, TableCell, TableHead, TableRow } from '@mui/material';
 import { FaCopy } from 'react-icons/fa';
 import { useRouter } from 'next/router';
 
@@ -11,8 +11,6 @@ export interface BucketItem {
 
 const BucketView = () => {
     const router = useRouter();
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState<string | null>(null);
     const [bucketItems, setBucketItems] = useState<BucketItem[]>([]);
 
     // Check authentication and fetch content
@@ -43,9 +41,8 @@ const BucketView = () => {
                 setBucketItems(data.results);
             } catch (error) {
                 console.error('Error fetching content:', error);
-                setError('Failed to load bucket content');
             } finally {
-                setLoading(false);
+                
             }
         };
 
