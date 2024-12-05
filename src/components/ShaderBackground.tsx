@@ -28,7 +28,12 @@ const ShaderBackground: React.FC<ShaderBackgroundProps> = ({ children }) => {
         quality={100} 
         priority // Load the image eagerly
       />
-      <div style={{ position: 'relative', zIndex: 1 }}>
+      <div style={{ 
+        position: 'relative', 
+        zIndex: 1, 
+        height: '100%', // Ensure this div takes full height
+        overflowY: 'auto' // Allow vertical scrolling for children
+      }}>
         {children}
       </div>
     </div>
@@ -36,29 +41,3 @@ const ShaderBackground: React.FC<ShaderBackgroundProps> = ({ children }) => {
 };
 
 export default ShaderBackground;
-
-
-
-// const ShaderBackground: React.FC = () => {
-//   const theme = useTheme();
-
-//   return (
-//     <div className={styles.html}>
-//       <div className={styles.cat}>
-//         <div className={styles.earleft}></div>
-//         <div className={styles.earright}></div>
-//         <div className={styles.face}>
-//           <div className={styles.eyeleft}>
-//             <div className={styles.eyepupil}></div>
-//           </div>
-//           <div className={styles.eyeright}>
-//             <div className={styles.eyepupil}></div>
-//           </div>
-//           <div className={styles.muzzle}></div>
-//         </div>
-//       </div>
-//       <a href="" className={styles.scrolldown} data-iconfont="ETmodules" data-icon></a>
-//     </div>
-    
-//   );
-// };

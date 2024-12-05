@@ -39,7 +39,7 @@ const BlogPostPage: React.FC = () => {
                 <Navbar />
                 <Container style={{ paddingTop: '3rem', paddingBottom: '3rem', boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)', borderRadius: '8px' }}>
                     <PageTitle title={blog.title} />
-                    <Card style={{ boxShadow: '0 4px 20px rgba(0, 0, 0, 0.2)', borderRadius: '8px' }}>
+                    <Card style={{ boxShadow: '0 4px 20px rgba(0, 0, 0, 0.2)', borderRadius: '8px', overflow: 'auto' }}>
                         <CardContent>
                             {/* Use the MarkdownRenderer to display the blog content */}
                             <MarkdownRenderer content={blog.content} />
