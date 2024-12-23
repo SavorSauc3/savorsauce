@@ -70,13 +70,16 @@ const Navbar: React.FC = () => {
                     </IconButton>
                 )}
                 {/* Menu Container with animation */}
-                <MenuContainer open={menuOpen}>
+                <MenuContainer open={menuOpen} style={{ backgroundColor: theme.palette.background.paper }}>
                     <Collapse in={menuOpen}>
                         <Button color="inherit" sx={{ marginLeft: '10px', marginRight: '10px' }}>
                             <Link href="/" style={{ color: 'inherit', textDecoration: 'none' }}>Home</Link>
                         </Button>
                         <Button color="inherit" sx={{ marginLeft: '10px', marginRight: '10px' }}>
                             <Link href="/blog" style={{ color: 'inherit', textDecoration: 'none' }}>Blog</Link>
+                        </Button>
+                        <Button color="inherit" sx={{ marginLeft: '10px', marginRight: '10px' }}>
+                            <Link href="/contact" style={{ color: 'inherit', textDecoration: 'none' }}>Contact</Link>
                         </Button>
                     </Collapse>
                 </MenuContainer>
@@ -88,6 +91,9 @@ const Navbar: React.FC = () => {
                         </Button>
                         <Button color="inherit" sx={{ marginLeft: '10px', marginRight: '10px' }}>
                             <Link href="/blog" style={{ color: 'inherit', textDecoration: 'none' }}>Blog</Link>
+                        </Button>
+                        <Button color="inherit" sx={{ marginLeft: '10px', marginRight: '10px' }}>
+                            <Link href="/contact" style={{ color: 'inherit', textDecoration: 'none' }}>Contact</Link>
                         </Button>
                     </>
                 )}
