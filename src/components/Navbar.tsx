@@ -78,9 +78,6 @@ const Navbar: React.FC = () => {
                         <Button color="inherit" sx={{ marginLeft: '10px', marginRight: '10px' }}>
                             <Link href="/blog" style={{ color: 'inherit', textDecoration: 'none' }}>Blog</Link>
                         </Button>
-                        <Button color="inherit" sx={{ marginLeft: '10px', marginRight: '10px' }}>
-                            <Link href="/store" style={{ color: 'inherit', textDecoration: 'none' }}>Store</Link>
-                        </Button>
                     </Collapse>
                 </MenuContainer>
                 {/* Regular menu for larger screens */}
@@ -91,9 +88,6 @@ const Navbar: React.FC = () => {
                         </Button>
                         <Button color="inherit" sx={{ marginLeft: '10px', marginRight: '10px' }}>
                             <Link href="/blog" style={{ color: 'inherit', textDecoration: 'none' }}>Blog</Link>
-                        </Button>
-                        <Button color="inherit" sx={{ marginLeft: '10px', marginRight: '10px' }}>
-                            <Link href="/store" style={{ color: 'inherit', textDecoration: 'none' }}>Store</Link>
                         </Button>
                     </>
                 )}

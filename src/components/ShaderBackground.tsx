@@ -16,7 +16,7 @@ const ShaderBackground: React.FC<ShaderBackgroundProps> = ({ children }) => {
   return (
     <div style={{ 
       position: 'relative', 
-      width: '100%', 
+      width: '100vw', 
       height: '100vh', // Ensure the div takes full viewport height
       overflow: 'hidden' // Hide any overflow
     }}>

@@ -37,7 +37,7 @@ const BlogPostPage: React.FC = () => {
         <>
             <ShaderBackground>
                 <Navbar />
-                <Container style={{ paddingTop: '3rem', paddingBottom: '3rem', boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)', borderRadius: '8px', overflow: 'auto' }}>
+                <Container style={{ paddingTop: '3rem', paddingBottom: '3rem', boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)', borderRadius: '8px', overflow: 'auto', maxWidth: '80vw' }}>
                     <PageTitle title={blog.title} />
                     <Card style={{ boxShadow: '0 4px 20px rgba(0, 0, 0, 0.2)', borderRadius: '8px', overflow: 'auto' }}>
                         <CardContent>

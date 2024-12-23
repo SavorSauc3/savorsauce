@@ -33,9 +33,9 @@ const MarkdownRenderer: React.FC<{ content: string }> = ({ content }) => {
                 padding: '16px',
                 height: '100%',
                 overflow: 'auto',
-                maxWidth: '800px',
+                maxWidth: '50vw',
                 margin: '0 auto',
-                textAlign: 'center',
+                textAlign: 'left',
             }}
         >
             <Markdown
