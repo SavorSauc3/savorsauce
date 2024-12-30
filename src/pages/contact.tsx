@@ -43,9 +43,9 @@ const Contact: React.FC = () => {
                             <CardContent>
                                 <Typography variant="h5">Connect with Me</Typography>
                                 <div>
-                                    <YouTube className={classes.icon} onClick={() => window.open('https://www.youtube.com/channel/YOUR_CHANNEL_ID', '_blank')} />
-                                    <LinkedIn className={classes.icon} onClick={() => window.open('https://www.linkedin.com/in/YOUR_PROFILE_ID', '_blank')} />
-                                    <Facebook className={classes.icon} onClick={() => window.open('https://www.facebook.com/YOUR_PROFILE_ID', '_blank')} />
+                                    <YouTube className={classes.icon} onClick={() => window.open('https://www.youtube.com/@savorsauce', '_blank')} />
+                                    <LinkedIn className={classes.icon} onClick={() => window.open('https://www.linkedin.com/in/nathaniel-lybrand-4b7664276/', '_blank')} />
+                                    <Facebook className={classes.icon} onClick={() => window.open('https://www.facebook.com/profile.php?id=100076576564396', '_blank')} />
                                 </div>
                                 <Typography variant="body2" color="textSecondary" style={{ marginTop: '1rem' }}>
                                     Follow me on social media for updates and more!
