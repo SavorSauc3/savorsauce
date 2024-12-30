@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react';
 import React from 'react';
 import { Container, Grid, Card, CardContent, Box, Typography } from '@mui/material';
 import { Facebook, LinkedIn, YouTube } from '@mui/icons-material';
